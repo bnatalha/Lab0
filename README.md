@@ -9,3 +9,5 @@ Calculadora de Figuras Geométricas
 4: Sincronizar o git
 5: Makefile
 6: Gerar a documentação automatica
+
+Tutorial GitHub: http://rogerdudler.github.io/git-guide/index.pt_BR.html
