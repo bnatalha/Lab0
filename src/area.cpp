@@ -1,4 +1,4 @@
-nclude <iostream>
+#include <iostream>
 using namespace std;
 
 double calcAreaTriangulo(int base, int altura, double area){
