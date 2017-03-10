@@ -26,34 +26,34 @@ int main(){
             cin >> option;
         }
             
-            switch(option){
-                case 0:
-                    return 0;
-                    break;
-                case 1:
-                    //function call
-                    break;
-                case 2:
-                    //function call
-                    break;
-                case 3:
-                    //function call
-                    break;
-                case 4:
-                    //function call
-                    break;
-                case 5:
-                    //function call
-                    break;
-                case 6:
-                    //function call
-                    break;
-                case 7:
-                    //function call
-                    break;
-                case 8:
-                    //function call
-                    break;
-            }
-        }while(option < 0 || option > 8);
+        switch(option){
+            case 0:
+                return 0;
+                break;
+            case 1:
+                //function call
+                break;
+            case 2:
+                //function call
+                break;
+            case 3:
+                //function call
+                break;
+            case 4:
+                //function call
+                break;
+            case 5:
+                //function call
+                break;
+            case 6:
+                //function call
+                break;
+            case 7:
+                //function call
+                break;
+            case 8:
+                //function call
+                break;
+        }
+    }while(option < 0 || option > 8);
 }     
