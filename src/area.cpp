@@ -1,7 +1,9 @@
-#include <iostream>
-using namespace std;
+#include "area.h"
 
-double calcAreaTriangulo(int base, int altura, double area){
+
+//pq vc passou a variavel area como argumento?? vc vai calcular a area... pq q vc precisaria 
+//passar a area q vc vai calcular(nem sabe o valor ainda) pra função q vai calcular???/ ? /? ???
+double calcAreaTriangulo(int base, int altura, double area){ 
     double area = (base * altura) / 2;
     return area;
 }
