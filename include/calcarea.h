@@ -4,5 +4,6 @@
 #include "area.h"
 
 //codigo
+void getTrianguloArea(x,y);
 
 #endif

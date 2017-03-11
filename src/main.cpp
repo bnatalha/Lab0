@@ -3,11 +3,21 @@
 #include "calcperimetro.h"
 #include "calcvolume.h"
 
+bool negativo( double n ) {
+    if (n < 0) {
+        cout << "Valor inserido é inválido! " << n 
+            << " é um número negativo. Por favor, insira um número positivo." << endl;
+        return true;
+    }
+    return false;
+}
+
 int main(){
     int option = 0;
     double area, perimetro, volume = 0.0;
+    double base, altura, profundidade;
     
-    cout << "Calculadora de Geometria Plana e Especial" << endl
+    cout << "Calculadora de Geometria Plana e Especial." << endl
         << "(1) Triangulo equilatero" << endl
         << "(2) Retangulo" << endl
         << "(3) Quadrado" << endl
@@ -35,7 +45,21 @@ int main(){
                 break;
             case 1:
                 //function call
-                //calcAreaTriangulo
+                do{
+                    cout << "Digite o valor da base do triângulo: "
+                    cin >> base;
+                }
+                while( negativo(base) );
+
+                do{
+                    cout << "Digite o valor da altura do triângulo: "
+                    cin >> base;
+                }
+                while( negativo(altura) );
+
+                getTrianguloArea(base, altura);
+                getTriangluoPerimetro(base. altura);
+
                 break;
             case 2:
                 //function call

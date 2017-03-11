@@ -4,5 +4,6 @@
 #include "perimetro.h"
 
 //codigo
+void getTrianguloPerimetro(x,y);
 
 #endif

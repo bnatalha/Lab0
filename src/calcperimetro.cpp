@@ -5,4 +5,7 @@
 
 //codigo
 
+void getTrianguloPerimetro(x,y){
+	cout << "O perimetro do triangulo é " << calcPerimetroTriangulo(x,y) << '.' << endl;
+}
 #endif
