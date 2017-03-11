@@ -1,5 +1,5 @@
-#include <iostream>
-using namespace std;
+#include "header.h"
+#include "area.h"
 
 int main(){
     int option = 0;
@@ -28,10 +28,12 @@ int main(){
             
         switch(option){
             case 0:
+            	cout << "Saindo do programa...\n";
                 return 0;
                 break;
             case 1:
                 //function call
+                //calcAreaTriangulo
                 break;
             case 2:
                 //function call
