@@ -1,5 +1,7 @@
 #include "header.h"
-#include "area.h"
+#include "calcarea.h"
+#include "calcperimetro.h"
+#include "calcvolume.h"
 
 int main(){
     int option = 0;

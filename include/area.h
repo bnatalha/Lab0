@@ -1,3 +1,6 @@
+/* Definição dos protótipos das funções que calculam a área de figuras geométricas
+planas e espaciais */
+
 #ifndef AREA_H
 #define AREA_H
 

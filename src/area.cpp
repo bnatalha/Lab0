@@ -1,3 +1,10 @@
+/* Implementação das funções que calculam a área de figuras geométricas planas e
+espaciais */
+
+#ifndef AREA_CPP
+#define AREA_CPP
+
+
 #include "area.h"
 
 double calcAreaTriangulo(int base, int altura){ 
@@ -44,3 +51,5 @@ double calcAreaTriangulo(int raio){
     double area = base * altura;
     return area;
 }
+
+#endif
