@@ -1,6 +1,6 @@
 ## by @natalha
 
-EXE = project_calc
+EXE = geometrica
 
 SRC_DIR = src
 OBJ_DIR = bin
