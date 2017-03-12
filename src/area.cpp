@@ -38,7 +38,7 @@ double calcAreaRetangulo(int base, int altura){
 * @param raio O raio de um circulo
 * @return A area de um circulo
 */
-double calcAreaCirculo((int raio){
+double calcAreaCirculo(int raio){
     double area = 3.1415 * (pow(raio, 2));
     return area;
 }
