@@ -13,14 +13,14 @@ int main(){
         << "(6) Cubo" << endl
         << "(7) Paralelepipedo" << endl
         << "(8) Esfera" << endl
-        << "(0) Sair" << endl << endl
-        << "Digite a sua opcao: ";
-        
-    cin >> option;
+        << "(0) Sair" << endl << endl;       
+    
         
     do{
-            
-    	if(option < 0 || option > 8){
+        cout << "\nDigite a sua opcao: ";
+        cin >> option;
+
+    	while(option < 0 || option > 8){
             cout << "Opcao nao eh valida! Digite uma opcao entre 0 a 8: ";
             cin >> option;
         }
@@ -72,5 +72,5 @@ int main(){
                 calc_esfera();
                 break;
         }
-    }while(option < 0 || option > 8);
+    }while(option >= 0 and option <= 8);
 }     
