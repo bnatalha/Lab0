@@ -1,7 +1,7 @@
 /**
 * @file area.h
-* @brief Implementação um header com as chamadas de funções do arquivo calcfiguras
-* @author bnatalha
+* @brief Implementação de um header referente as chamadas de funções, das areas de diferentes figuras, no arquivo calcfiguras.cpp
+* @author bnatalha, MJK2
 * @since 11/03/2017
 * @date 12/03/2017
 */
