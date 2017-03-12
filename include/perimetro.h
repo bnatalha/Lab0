@@ -1,11 +1,19 @@
+/**
+* @file perimetro.h
+* @brief Implementação de um header referente as chamadas de funções, dos perimetros de diferentes figuras, no arquivo calcfiguras.cpp
+* @author bnatalha, MJK2
+* @since 11/03/2017
+* @date 12/03/2017
+*/
+
 #ifndef PERIMETRO_H
 #define PERIMETRO_H
 
 #include "header.h"
 
-double calcPerimetroTriangulo	( int lado); 				// como o triângulo é equilátero, so precisamos multiplicar o tamanho do lado por 3.
+double calcPerimetroTriangulo	( int lado); 				
 double calcPerimetroRetangulo	( int base, int altura); 
-double calcPerimetroQuadrado	( int lado); 				// como quadrados são equiláteros, multiplicamos um dos lados por 4.
+double calcPerimetroQuadrado	( int lado); 				
 double calcPerimetroCirculo		( int raio);
 
 #endif
