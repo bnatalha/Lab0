@@ -3,14 +3,32 @@
 
 #include "calcfiguras.h"
 
+int NumeroNatural ( void ){
+	int x;
+
+	do{
+		
+		cin >> x;
+		
+		if(x < 0 ){
+			cout << "![ERRO] Não existe medida negativa para figuras geométrica."
+			<< "\n Insira um número positivo: ";
+		}
+
+	} while ( x < 0 );
+
+	return x;
+
+}
+
 //    (1) Triangulo equilatero
 void calc_triangulo( void ){
 	int base, altura;
 
 	cout << "Digite a base do triangulo: ";
-	cin >> base;
+	base = NumeroNatural();
 	cout << "Digite a altura do triangulo: ";
-	cin >> altura;
+	altura = NumeroNatural();
 
 	cout << "Perímetro: " << calcPerimetroTriangulo(base) << endl;
 	cout << "Área: " << calcAreaTriangulo(base,altura) << endl;
@@ -22,9 +40,9 @@ void calc_retangulo( void ){
 	int base, altura;
 
 	cout << "Digite a base do retangulo: ";
-	cin >> base;
+	base = NumeroNatural();
 	cout << "Digite a altura do retangulo: ";
-	cin >> altura;
+	altura = NumeroNatural();
 
 	cout << "Perímetro: " << calcPerimetroRetangulo(base,altura) << endl;
 	cout << "Área: " << calcAreaRetangulo(base,altura) << endl;
@@ -36,7 +54,7 @@ void calc_quadrado( void ){
 	int lado;
 
 	cout << "Digite o lado do quadrado: ";
-	cin >> lado;
+	lado = NumeroNatural();
 
 	cout << "Perímetro: " << calcPerimetroQuadrado(lado) << endl;
 	cout << "Área: " << calcAreaQuadrado(lado) << endl;
@@ -47,7 +65,7 @@ void calc_circulo( void ){
 	int raio;
 
 	cout << "Digite o raio do circulo: ";
-	cin >> raio;
+	raio = NumeroNatural();
 
 	cout << "Perímetro: " << calcPerimetroCirculo(raio) << endl;
 	cout << "Área: " << calcAreaCirculo(raio) << endl;
@@ -58,11 +76,11 @@ void calc_piramide( void ){
 	int a_base, a_face, altura;
 
 	cout << "Digite a area da base da piramide: ";
-	cin >> a_base;
+	a_base = NumeroNatural();
 	cout << "Digite a area da face lateral da piramide: ";
-	cin >> a_face;
+	a_face = NumeroNatural();
 	cout << "Digite a altura da piramide: ";
-	cin >> altura;
+	altura = NumeroNatural();
 
 	cout << "Volume: " << calcVolumePiramide(a_base,altura) << endl;
 	cout << "Área: " << calcAreaPiramide(a_base,a_face) << endl;
@@ -72,7 +90,7 @@ void calc_cubo( void ){
 	int aresta;
 
 	cout << "Digite a aresta do cubo: ";
-	cin >> aresta;
+	aresta = NumeroNatural();
 
 	cout << "Volume: " << calcVolumeCubo(aresta) << endl;
 	cout << "Área: " << calcAreaCubo(aresta) << endl;
@@ -83,11 +101,11 @@ void calc_paralelepipedo( void ){
 	int a1, a2, a3;
 
 	cout << "Digite a largura do paralelepipedo: ";
-	cin >> a1;
+	a1 = NumeroNatural();
 	cout << "Digite a profundidade do paralelepipedo: ";
-	cin >> a2;
+	a2 = NumeroNatural();
 	cout << "Digite a altura do paralelepipedo: ";
-	cin >> a3;
+	a3 = NumeroNatural();
 
 	cout << "Volume: " << calcVolumeParalelepipedo(a1,a2,a3) << endl;
 	cout << "Área: " << calcAreaParalelepipedo(a1,a2,a3) << endl;
@@ -98,7 +116,7 @@ void calc_esfera( void ){
 	int raio;
 
 	cout << "Digite o raio da esfera: ";
-	cin >> raio;
+	raio = NumeroNatural();
 
 	cout << "Volume: " << calcVolumeEsfera(raio) << endl;
 	cout << "Área: " << calcAreaEsfera(raio) << endl;
