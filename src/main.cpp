@@ -1,16 +1,5 @@
 #include "header.h"
-#include "calcarea.h"
-#include "calcperimetro.h"
-#include "calcvolume.h"
-
-bool negativo( double n ) {
-    if (n < 0) {
-        cout << "Valor inserido é inválido! " << n 
-            << " é um número negativo. Por favor, insira um número positivo." << endl;
-        return true;
-    }
-    return false;
-}
+#include "calfiguras.h"
 
 int main(){
     int option = 0;
@@ -39,48 +28,50 @@ int main(){
         }
             
         switch(option){
+            
             case 0:
             	cout << "Saindo do programa...\n";
                 return 0;
                 break;
+            
             case 1:
                 //function call
-                do{
-                    cout << "Digite o valor da base do triângulo: "
-                    cin >> base;
-                }
-                while( negativo(base) );
-
-                do{
-                    cout << "Digite o valor da altura do triângulo: "
-                    cin >> base;
-                }
-                while( negativo(altura) );
-
-                getTrianguloArea(base, altura);
-                getTriangluoPerimetro(base. altura);
-
+                calc_triangulo();
                 break;
+            
             case 2:
                 //function call
+                calc_retangulo();
                 break;
+            
             case 3:
                 //function call
+                calc_quadrado();
                 break;
+            
             case 4:
                 //function call
+                calc_circulo();
                 break;
+            
             case 5:
                 //function call
+                calc_piramide();
                 break;
+            
             case 6:
                 //function call
+                calc_cubo();
                 break;
+            
             case 7:
                 //function call
+                calc_paralelepipedo();
                 break;
+            
             case 8:
                 //function call
+                calc_esfera();
                 break;
         }
     }while(option < 0 || option > 8);
