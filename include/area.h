@@ -1,5 +1,10 @@
-/* Definição dos protótipos das funções que calculam a área de figuras geométricas
-planas e espaciais */
+/**
+* @file area.h
+* @brief Implementação um header com as chamadas de funções do arquivo calcfiguras
+* @author bnatalha
+* @since 11/03/2017
+* @date 12/03/2017
+*/
 
 #ifndef AREA_H
 #define AREA_H
