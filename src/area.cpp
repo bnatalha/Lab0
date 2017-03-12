@@ -17,7 +17,7 @@ double calcAreaRetangulo(int base, int altura){
     return area;
 }
 
-double calcAreaCirculo(int raio){
+double calcAreaCirculo((int raio){
     double area = 3.1415 * (pow(raio, 2));
     return area;
 }
@@ -43,7 +43,7 @@ double calcAreaParalelepipedo(int aresta1, int aresta2, int aresta3){
     return area;
 }
 
-double calcAreaTriangulo(int raio){
+double calcAreaEsfera(int raio){
     double area = 4 * 3.1415 * pow(raio, 2);
     return area;
 }
