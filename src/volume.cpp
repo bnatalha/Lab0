@@ -18,7 +18,7 @@ double calcVolumeParalelepipedo(int aresta1, int aresta2, int aresta3){
     return volume;
 }
 
-double calcVolumeTriangulo(int raio){
+double calcVolumeEsfera(int raio){
     double volume = (4 / 3) * 3.1415 * pow(raio, 3);
     return volume;
 }
