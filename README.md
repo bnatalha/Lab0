@@ -9,3 +9,6 @@ Calculadora de Figuras Geométricas
 4: Sincronizar o git
 5: Makefile
 6: Gerar a documentação automatica
+
+Os arquivos calcarea.h, calcvolume.h, calcperimetro.h e seus respectivos .cpp's foram substituídos
+pelo arquivo calcfiguras com a finalidade de aumentar a eficiência do algoritmo, diminuindo a quantidade de vezes que o usuário seria solicitado para entrar com os valores referentes as medidas das figuras geométricas.
