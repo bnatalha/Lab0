@@ -13,6 +13,6 @@ double calcAreaCirculo(int raio);
 double calcAreaPiramide(int areaBase, int faceLateral);
 double calcAreaCubo(int aresta);
 double calcAreaParalelepipedo(int aresta1, int aresta2, int aresta3);
-double calcAreaTriangulo(int raio);
+double calcAreaEsfera(int raio);
 
 #endif
