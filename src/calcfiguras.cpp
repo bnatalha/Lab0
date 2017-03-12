@@ -12,7 +12,7 @@ void calc_triangulo( void ){
 	cout << "Digite a altura do triangulo: ";
 	cin >> altura;
 
-	cout << "Perímetro: " << CalcPerimetroTriangulo(base) << endl;
+	cout << "Perímetro: " << calcPerimetroTriangulo(base) << endl;
 	cout << "Área: " << calcAreaTriangulo(base,altura) << endl;
 
 }
@@ -33,15 +33,13 @@ void calc_retangulo( void ){
 
 //    (3) Quadrado
 void calc_quadrado( void ){
-	int base, altura;
+	int lado;
 
-	cout << "Digite a base do quadrado: ";
-	cin >> base;
-	cout << "Digite a altura do quadrado: ";
-	cin >> altura;
+	cout << "Digite o lado do quadrado: ";
+	cin >> lado;
 
-	cout << "Perímetro: " << calcPerimetroRetangulo(base) << endl;
-	cout << "Área: " << calcAreaRetangulo(base,altura) << endl;
+	cout << "Perímetro: " << calcPerimetroQuadrado(lado) << endl;
+	cout << "Área: " << calcAreaQuadrado(lado) << endl;
 }
 
 //    (4) Circulo
@@ -81,7 +79,6 @@ void calc_cubo( void ){
 }
 
 //    (7) Paralelepipedo
-// profundidade
 void calc_paralelepipedo( void ){
 	int a1, a2, a3;
 
@@ -98,7 +95,13 @@ void calc_paralelepipedo( void ){
 
 //    (8) Esfera
 void calc_esfera( void ){
-	//codigo
+	int raio;
+
+	cout << "Digite o raio da esfera: ";
+	cin >> raio;
+
+	cout << "Volume: " << calcVolumeEsfera(raio) << endl;
+	cout << "Área: " << calcAreaEsfera(raio) << endl;
 }
 
 #endif
