@@ -34,7 +34,7 @@ int main(){
             
             case 1:
                 //function call
-                calc_triangulo(area);
+                calc_triangulo();
                 break;
             
             case 2:
