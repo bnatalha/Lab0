@@ -1,6 +1,19 @@
+/**
+* @file main.cpp
+* @brief O arquivo main da calculadora geométrica
+* @details Baseado na opcao escolhida pelo usuario, uma figura geometrica é escolhida e funcoes
+* correspondentes a essa figura sao selecionadas
+* @author bnatalha, MJK2
+* @since 11/03/2017
+* @date 11/03/2017
+*/
+
 #include "header.h"
 #include "calcfiguras.h"
 
+/**
+* @brief Funcao que chama outras funcoes baseado no input do usuario
+*/
 int main(){
     int option = 0;
     
@@ -17,7 +30,7 @@ int main(){
     
         
     do{
-        cout << "\nDigite a sua opcao: ";
+        cout << endl << "Digite a sua opcao: ";
         cin >> option;
 
     	while(option < 0 || option > 8){
@@ -33,42 +46,34 @@ int main(){
                 break;
             
             case 1:
-                //function call
                 calc_triangulo();
                 break;
             
             case 2:
-                //function call
                 calc_retangulo();
                 break;
             
             case 3:
-                //function call
                 calc_quadrado();
                 break;
             
             case 4:
-                //function call
                 calc_circulo();
                 break;
             
             case 5:
-                //function call
                 calc_piramide();
                 break;
             
             case 6:
-                //function call
                 calc_cubo();
                 break;
             
             case 7:
-                //function call
                 calc_paralelepipedo();
                 break;
             
             case 8:
-                //function call
                 calc_esfera();
                 break;
         }
