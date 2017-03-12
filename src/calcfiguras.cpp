@@ -35,9 +35,9 @@ void calc_retangulo( void ){
 void calc_quadrado( void ){
 	int base, altura;
 
-	cout << "Digite a base do retangulo: ";
+	cout << "Digite a base do quadrado: ";
 	cin >> base;
-	cout << "Digite a altura do retangulo: ";
+	cout << "Digite a altura do quadrado: ";
 	cin >> altura;
 
 	cout << "Perímetro: " << calcPerimetroRetangulo(base) << endl;
@@ -46,7 +46,13 @@ void calc_quadrado( void ){
 
 //    (4) Circulo
 void calc_circulo( void ){
-	//codigo
+	int raio;
+
+	cout << "Digite o raio do circulo: ";
+	cin >> raio;
+
+	cout << "Perímetro: " << calcPerimetroCirculo(raio) << endl;
+	cout << "Área: " << calcAreaCirculo(raio) << endl;
 }
 
 //    (5) Piramide com base quadrangular
