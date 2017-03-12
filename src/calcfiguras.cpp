@@ -1,27 +1,36 @@
+/**
+* @file calcfiguras.cpp
+* @brief Implementação de funções que pedem por entradas do usuario baseado na figura geometrica escolhida
+* @author bnatalha, MJK2
+* @since 11/03/2017
+* @date 11/03/2017
+*/
+
 #ifndef CALCFIGURAS_CPP
 #define CALCFIGURAS_CPP
 
 #include "calcfiguras.h"
 
+/**
+* @brief Funcao que controla o input de inteiros do usuario para serem numero naturais
+* @return Um numero natural entrado pelo usuario
+*/
 int NumeroNatural ( void ){
 	int x;
 
 	do{
-		
 		cin >> x;
-		
 		if(x < 0 ){
 			cout << "![ERRO] Não existe medida negativa para figuras geométrica."
-			<< "\n Insira um número positivo: ";
+			<< endl << "Insira um número positivo: ";
 		}
-
 	} while ( x < 0 );
-
 	return x;
-
 }
 
-//    (1) Triangulo equilatero
+/**
+* @brief Funcao que pede por entradas e imprime um resultado referentes a um triangulo equilatero
+*/
 void calc_triangulo( void ){
 	int base, altura;
 
@@ -35,7 +44,9 @@ void calc_triangulo( void ){
 
 }
 
-//    (2) Retangulo
+/**
+* @brief Funcao que pede por entradas e imprime um resultado referentes a um retangulo
+*/
 void calc_retangulo( void ){
 	int base, altura;
 
@@ -49,7 +60,9 @@ void calc_retangulo( void ){
 
 }
 
-//    (3) Quadrado
+/**
+* @brief Funcao que pede por entradas e imprime um resultado referentes a um quadrado
+*/
 void calc_quadrado( void ){
 	int lado;
 
@@ -60,7 +73,9 @@ void calc_quadrado( void ){
 	cout << "Área: " << calcAreaQuadrado(lado) << endl;
 }
 
-//    (4) Circulo
+/**
+* @brief Funcao que pede por entradas e imprime um resultado referentes a um circulo
+*/
 void calc_circulo( void ){
 	int raio;
 
@@ -71,7 +86,9 @@ void calc_circulo( void ){
 	cout << "Área: " << calcAreaCirculo(raio) << endl;
 }
 
-//    (5) Piramide com base quadrangular
+/**
+* @brief Funcao que pede por entradas e imprime um resultado referentes a uma piramide quadrangular
+*/
 void calc_piramide( void ){
 	int a_base, a_face, altura;
 
@@ -86,6 +103,9 @@ void calc_piramide( void ){
 	cout << "Área: " << calcAreaPiramide(a_base,a_face) << endl;
 }
 
+/**
+* @brief Funcao que pede por entradas e imprime um resultado referentes a um cubo
+*/
 void calc_cubo( void ){
 	int aresta;
 
@@ -96,7 +116,9 @@ void calc_cubo( void ){
 	cout << "Área: " << calcAreaCubo(aresta) << endl;
 }
 
-//    (7) Paralelepipedo
+/**
+* @brief Funcao que pede por entradas e imprime um resultado referentes a um paralelepipedo
+*/
 void calc_paralelepipedo( void ){
 	int a1, a2, a3;
 
@@ -111,7 +133,9 @@ void calc_paralelepipedo( void ){
 	cout << "Área: " << calcAreaParalelepipedo(a1,a2,a3) << endl;
 }
 
-//    (8) Esfera
+/**
+* @brief Funcao que pede por entradas e imprime um resultado referentes a uma esfera
+*/
 void calc_esfera( void ){
 	int raio;
 
