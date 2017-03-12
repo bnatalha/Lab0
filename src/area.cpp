@@ -17,15 +17,16 @@ double calcAreaRetangulo(int base, int altura){
     return area;
 }
 
-double calcAreaCirculo(int lado){
+double calcAreaQuadrado(int lado){
+    double area = 3.1415 * (pow(raio, 2));
+    return area;
+}
+
+double calcAreaCirculo(int raio){
     double area = pow(lado, 2);
     return area;
 }
 
-double calcAreaQuadrado(int raio){
-    double area = 3.1415 * (pow(raio, 2));
-    return area;
-}
 
 double calcAreaPiramide(int areaBase, int ladoTriangulo){
     double area = 4 * (areaBase * ladoTriangulo) + areaBase;
