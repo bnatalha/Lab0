@@ -1,6 +1,6 @@
 /**
 * @file volume.h
-* @brief Implementação de um header referente as chamadas de funções, dos volumes de diferentes figuras, no arquivo calcfiguras.cpp
+* @brief Implementação de um header referente as chamadas de funções que calculam volumes de diferentes figuras, no arquivo volume.cpp.
 * @author bnatalha, MJK2
 * @since 11/03/2017
 * @date 12/03/2017

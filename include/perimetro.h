@@ -1,6 +1,6 @@
 /**
 * @file perimetro.h
-* @brief Implementação de um header referente as chamadas de funções, dos perimetros de diferentes figuras, no arquivo perimetro.cpp
+* @brief Implementação de um header referente as chamadas de funções que calculam perimetros, no arquivo perimetro.cpp.
 * @author bnatalha, MJK2
 * @since 11/03/2017
 * @date 12/03/2017

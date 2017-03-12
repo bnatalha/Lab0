@@ -1,0 +1,114 @@
+\hypertarget{volume_8cpp}{}\section{Referência do Arquivo src/volume.cpp}
+\label{volume_8cpp}\index{src/volume.\+cpp@{src/volume.\+cpp}}
+
+
+Implementação de funções que calculam o volume de figuras geométricas.  
+
+
+{\ttfamily \#include \char`\"{}volume.\+h\char`\"{}}\newline
+\subsection*{Funções}
+\begin{DoxyCompactItemize}
+\item 
+double \hyperlink{volume_8cpp_a2fc6fb84e472386189fb846e4f412d04}{calc\+Volume\+Piramide} (int area\+Base, int altura)
+\begin{DoxyCompactList}\small\item\em Funcao que calcula o volume de uma piramide quadrangular. \end{DoxyCompactList}\item 
+double \hyperlink{volume_8cpp_ad5fc9ec00ee1a2f75507e165373ccfdd}{calc\+Volume\+Cubo} (int aresta)
+\begin{DoxyCompactList}\small\item\em Funcao que calcula o volume de um cubo. \end{DoxyCompactList}\item 
+double \hyperlink{volume_8cpp_aac097092345518c5eafd83bd448e43c7}{calc\+Volume\+Paralelepipedo} (int aresta1, int aresta2, int aresta3)
+\begin{DoxyCompactList}\small\item\em Funcao que calcula o volume de um paralelepipedo. \end{DoxyCompactList}\item 
+double \hyperlink{volume_8cpp_a3148c956bfc20c42522f6023a5a419f9}{calc\+Volume\+Esfera} (int raio)
+\begin{DoxyCompactList}\small\item\em Funcao que calcula o volume de uma esfera. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Descrição detalhada}
+Implementação de funções que calculam o volume de figuras geométricas. 
+
+\begin{DoxyAuthor}{Autor}
+bnatalha, M\+J\+K2 
+\end{DoxyAuthor}
+\begin{DoxySince}{Desde}
+11/03/2017 
+\end{DoxySince}
+\begin{DoxyDate}{Data}
+11/03/2017 
+\end{DoxyDate}
+
+
+\subsection{Funções}
+\mbox{\Hypertarget{volume_8cpp_ad5fc9ec00ee1a2f75507e165373ccfdd}\label{volume_8cpp_ad5fc9ec00ee1a2f75507e165373ccfdd}} 
+\index{volume.\+cpp@{volume.\+cpp}!calc\+Volume\+Cubo@{calc\+Volume\+Cubo}}
+\index{calc\+Volume\+Cubo@{calc\+Volume\+Cubo}!volume.\+cpp@{volume.\+cpp}}
+\subsubsection{\texorpdfstring{calc\+Volume\+Cubo()}{calcVolumeCubo()}}
+{\footnotesize\ttfamily double calc\+Volume\+Cubo (\begin{DoxyParamCaption}\item[{int}]{aresta }\end{DoxyParamCaption})}
+
+
+
+Funcao que calcula o volume de um cubo. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em aresta} & A aresta de um cubo \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+O volume de um cubo 
+\end{DoxyReturn}
+\mbox{\Hypertarget{volume_8cpp_a3148c956bfc20c42522f6023a5a419f9}\label{volume_8cpp_a3148c956bfc20c42522f6023a5a419f9}} 
+\index{volume.\+cpp@{volume.\+cpp}!calc\+Volume\+Esfera@{calc\+Volume\+Esfera}}
+\index{calc\+Volume\+Esfera@{calc\+Volume\+Esfera}!volume.\+cpp@{volume.\+cpp}}
+\subsubsection{\texorpdfstring{calc\+Volume\+Esfera()}{calcVolumeEsfera()}}
+{\footnotesize\ttfamily double calc\+Volume\+Esfera (\begin{DoxyParamCaption}\item[{int}]{raio }\end{DoxyParamCaption})}
+
+
+
+Funcao que calcula o volume de uma esfera. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em raio} & O raio de uma esfera \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+O volume de uma esfera 
+\end{DoxyReturn}
+\mbox{\Hypertarget{volume_8cpp_aac097092345518c5eafd83bd448e43c7}\label{volume_8cpp_aac097092345518c5eafd83bd448e43c7}} 
+\index{volume.\+cpp@{volume.\+cpp}!calc\+Volume\+Paralelepipedo@{calc\+Volume\+Paralelepipedo}}
+\index{calc\+Volume\+Paralelepipedo@{calc\+Volume\+Paralelepipedo}!volume.\+cpp@{volume.\+cpp}}
+\subsubsection{\texorpdfstring{calc\+Volume\+Paralelepipedo()}{calcVolumeParalelepipedo()}}
+{\footnotesize\ttfamily double calc\+Volume\+Paralelepipedo (\begin{DoxyParamCaption}\item[{int}]{aresta1,  }\item[{int}]{aresta2,  }\item[{int}]{aresta3 }\end{DoxyParamCaption})}
+
+
+
+Funcao que calcula o volume de um paralelepipedo. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em aresta1} & A primeira das 3 arestas de um paralelepipedo \\
+\hline
+{\em aresta2} & A segunda das 3 arestas de um paralelepipedo \\
+\hline
+{\em aresta3} & A terceira das 3 arestas de um paralelepipedo \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+O volume de um paralelepipedo 
+\end{DoxyReturn}
+\mbox{\Hypertarget{volume_8cpp_a2fc6fb84e472386189fb846e4f412d04}\label{volume_8cpp_a2fc6fb84e472386189fb846e4f412d04}} 
+\index{volume.\+cpp@{volume.\+cpp}!calc\+Volume\+Piramide@{calc\+Volume\+Piramide}}
+\index{calc\+Volume\+Piramide@{calc\+Volume\+Piramide}!volume.\+cpp@{volume.\+cpp}}
+\subsubsection{\texorpdfstring{calc\+Volume\+Piramide()}{calcVolumePiramide()}}
+{\footnotesize\ttfamily double calc\+Volume\+Piramide (\begin{DoxyParamCaption}\item[{int}]{area\+Base,  }\item[{int}]{altura }\end{DoxyParamCaption})}
+
+
+
+Funcao que calcula o volume de uma piramide quadrangular. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em area\+Base} & A area da base de uma piramide quadrangular \\
+\hline
+{\em altura} & A altura de uma piramide quadrangular \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+O volume de uma piramide quadrangular 
+\end{DoxyReturn}

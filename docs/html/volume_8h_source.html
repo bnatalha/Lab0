@@ -1,0 +1,84 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.14"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Geometrica: Código-Fonte de include/volume.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Geometrica
+   &#160;<span id="projectnumber">1.0</span>
+   </div>
+   <div id="projectbrief">Calculadora de área/volume/perimetro de figuras geométricas</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.8.14 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Busca');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Busca');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">volume.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="volume_8h.html">Vá para a documentação desse arquivo.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#ifndef VOLUME_H</span></div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#define VOLUME_H</span></div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;</div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="header_8h.html">header.h</a>&quot;</span></div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;</div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="keywordtype">double</span> <a class="code" href="volume_8h.html#a2fc6fb84e472386189fb846e4f412d04">calcVolumePiramide</a>(<span class="keywordtype">int</span> areaBase, <span class="keywordtype">int</span> altura);</div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="keywordtype">double</span> <a class="code" href="volume_8h.html#ad5fc9ec00ee1a2f75507e165373ccfdd">calcVolumeCubo</a>(<span class="keywordtype">int</span> aresta);</div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="keywordtype">double</span> <a class="code" href="volume_8h.html#aac097092345518c5eafd83bd448e43c7">calcVolumeParalelepipedo</a>(<span class="keywordtype">int</span> aresta1, <span class="keywordtype">int</span> aresta2, <span class="keywordtype">int</span> aresta3);</div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="keywordtype">double</span> <a class="code" href="volume_8h.html#a3148c956bfc20c42522f6023a5a419f9">calcVolumeEsfera</a>(<span class="keywordtype">int</span> raio);</div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;</div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#endif</span></div><div class="ttc" id="header_8h_html"><div class="ttname"><a href="header_8h.html">header.h</a></div><div class="ttdoc">Implementação de um header referente a inclusao de bibliotecas do g++. </div></div>
+<div class="ttc" id="volume_8h_html_ad5fc9ec00ee1a2f75507e165373ccfdd"><div class="ttname"><a href="volume_8h.html#ad5fc9ec00ee1a2f75507e165373ccfdd">calcVolumeCubo</a></div><div class="ttdeci">double calcVolumeCubo(int aresta)</div><div class="ttdoc">Funcao que calcula o volume de um cubo. </div><div class="ttdef"><b>Definition:</b> volume.cpp:30</div></div>
+<div class="ttc" id="volume_8h_html_aac097092345518c5eafd83bd448e43c7"><div class="ttname"><a href="volume_8h.html#aac097092345518c5eafd83bd448e43c7">calcVolumeParalelepipedo</a></div><div class="ttdeci">double calcVolumeParalelepipedo(int aresta1, int aresta2, int aresta3)</div><div class="ttdoc">Funcao que calcula o volume de um paralelepipedo. </div><div class="ttdef"><b>Definition:</b> volume.cpp:42</div></div>
+<div class="ttc" id="volume_8h_html_a3148c956bfc20c42522f6023a5a419f9"><div class="ttname"><a href="volume_8h.html#a3148c956bfc20c42522f6023a5a419f9">calcVolumeEsfera</a></div><div class="ttdeci">double calcVolumeEsfera(int raio)</div><div class="ttdoc">Funcao que calcula o volume de uma esfera. </div><div class="ttdef"><b>Definition:</b> volume.cpp:52</div></div>
+<div class="ttc" id="volume_8h_html_a2fc6fb84e472386189fb846e4f412d04"><div class="ttname"><a href="volume_8h.html#a2fc6fb84e472386189fb846e4f412d04">calcVolumePiramide</a></div><div class="ttdeci">double calcVolumePiramide(int areaBase, int altura)</div><div class="ttdoc">Funcao que calcula o volume de uma piramide quadrangular. </div><div class="ttdef"><b>Definition:</b> volume.cpp:20</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Gerado por &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.14
+</small></address>
+</body>
+</html>
