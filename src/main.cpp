@@ -1,5 +1,5 @@
 #include "header.h"
-#include "calfiguras.h"
+#include "calcfiguras.h"
 
 int main(){
     int option = 0;
@@ -30,7 +30,7 @@ int main(){
         switch(option){
             
             case 0:
-            	cout << "Saindo do programa...\n";
+            	cout << "Saindo do programa..." << endl;
                 return 0;
                 break;
             
