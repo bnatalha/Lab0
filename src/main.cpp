@@ -3,8 +3,6 @@
 
 int main(){
     int option = 0;
-    double area, perimetro, volume = 0.0;
-    double base, altura, profundidade;
     
     cout << "Calculadora de Geometria Plana e Especial." << endl
         << "(1) Triangulo equilatero" << endl
@@ -36,7 +34,7 @@ int main(){
             
             case 1:
                 //function call
-                calc_triangulo();
+                calc_triangulo(area);
                 break;
             
             case 2:
