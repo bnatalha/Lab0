@@ -17,12 +17,12 @@ double calcAreaRetangulo(int base, int altura){
     return area;
 }
 
-double calcAreaQuadrado(int lado){
+double valcAreaCirculo((int raio){
     double area = 3.1415 * (pow(raio, 2));
     return area;
 }
 
-double calcAreaCirculo(int raio){
+double calcAreaQuadrado(int lado){
     double area = pow(lado, 2);
     return area;
 }
